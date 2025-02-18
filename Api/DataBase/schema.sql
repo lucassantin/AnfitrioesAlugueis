@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS rental_properties;
+
+CREATE TABLE rental_properties (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    nome VARCHAR(255) NOT NULL,
+    imagem VARCHAR(255) NOT NULL,
+    preco DECIMAL(10, 2) NOT NULL,
+    localizacao VARCHAR(255) NOT NULL
+);
